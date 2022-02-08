@@ -1,0 +1,386 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.bgclr1{
+  background-color: #F7F1EB;
+}
+
+.bgclr2{
+  background-color: #F7F1EB;
+}
+
+.bgclr3{
+  background-color: #F7F1EB;
+}
+/* ----------------- MENU's STYLE ------------------ */
+
+.icon-name{
+  font-family: "Copperplate", Fantasy;
+  font-size: 22px;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  color: #664842;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-toggler-icon{
+  color: white;
+}
+
+.navbar{
+  padding: 22px 0px;
+  background-color: #323650 !important;  /* marked important so that its given preferance more than bootstrap */
+  border-bottom: none !important;
+  transition: all 0.5s ease-in-out !important
+}
+
+.navbar ul li a{
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all 0.5s ease-in;
+}
+
+.navbar ul li a:hover{
+  color: #A26969 !important;
+}
+
+.navbar-toggler {
+  transition: all 0.5s ease-in;
+  border: 1px solid white !important;
+}
+
+.navbar-toggler:hover{
+  background-color: #A26969 !important;
+}
+
+
+/* ----------------- Slider STYLE ------------------ */
+
+.slider{
+  width: 100%;
+  height: 700px;
+  background-image: url(..//img/different-types-of-sports.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.i-slider{
+  color: #808BDF;
+  font-size: 60px;
+  letter-spacing: 15px;
+}
+
+.slider-content{
+  position: absolute;
+  top:40%;
+  width: 100%;
+}
+
+.slider .text, .slider .typed-cursor
+{
+  display: inline;
+  font-size: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.primary{
+  color: #12F3B1;
+}
+
+.secondary{
+  background-color: #24273A !important;
+}
+
+
+/* -------------------- About Us ------------------ */
+
+.service-area p{
+  margin-bottom: -5px;
+}
+
+.service-wrap{
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  padding: 25px 35px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  z-index: 9;
+  margin-top: 20px;
+}
+
+.service-wrap::before, .service-wrap::after{
+  content: "";
+  height: 300%;
+  position: absolute;
+  transform: rotate(45deg);
+  width : 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: #24273A;
+}
+
+.service-wrap::before{
+  top: -37px;
+  left: 100%;
+}
+
+.service-wrap:hover:before{
+  left: -27px;
+  opacity: 1;
+}
+
+.service-wrap::after{
+  right: 100%;
+  bottom: -37px;
+}
+
+.service-wrap:hover:after{
+  right: -27px;
+  opacity: 1;
+}
+
+.service-wrap:hover{
+  color: white;
+}
+
+.service-wrap:h3{
+  color: white;
+}
+
+.service-wrap:hover h3{
+  color: white;
+}
+
+.service-wrap:hover h3:after{
+  background-color: white;
+}
+
+.service-icon i{
+  font-size: 30px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+.service-wrap:hover .service-icon i{
+  transform: rotate(360deg);
+}
+
+.service-wrap h3{
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.service-wrap p{
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+/* -------------------- Work Markups ------------------ */
+
+.i1{
+  width: 380px;
+  height: 380px;
+}
+
+
+.row.no-gutters [class*=col-]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.image-wrapper{
+  overflow: hidden;
+}
+
+.image-wrapper img{
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.image-wrapper img:hover{
+  transform: scale(1.5);
+}
+
+
+/* -------------------- Team Styles ------------------ */
+
+
+.team-heading{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.team-members{
+  margin-top: 50px;
+}
+
+.team-members{
+  margin: 0 15px;
+}
+
+.team-member-info{
+  padding: 10px 0 30px 0;
+}
+
+h4.team-member-name{
+  color: #12F3B1;#0B966D;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 2px;
+}
+
+h4.team-member-designation{
+  color: #5BCAA9;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.i2{
+  width: 250px;
+  height: 250px;
+}
+
+
+/* -------------------- INITIATIVES styles ------------------ */
+
+.i3{
+  width: 500px;
+  height: 400px;
+}
+
+.i3:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.testimonials{
+  width: 100%;
+  height: 100%;
+  background-image: url(..//img/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 155px;
+}
+
+.inihead{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.pini{
+  color: #12F3B1;
+  font-size: 20px;
+  background-color: white;
+  display: inline-block;
+  background-color: #323650;
+  border-radius: 15px 50px;
+  padding: 15px;
+  box-shadow: 22px 23px 11px -17px rgba(255,255,255,0.84);
+  -webkit-box-shadow: 22px 23px 11px -17px rgba(255,255,255,0.84);
+  -moz-box-shadow: 22px 23px 11px -17px rgba(255,255,255,0.84);
+}
+
+.testimonials .carousel-indicators{
+  bottom: -60px;
+}
+
+/* -------------------- Contact us styles ------------------ */
+
+.form-control{
+  border-radius: 0px !important;
+}
+
+.btn {
+  -webkit-border-radius: 21;
+  -moz-border-radius: 21;
+  border-radius: 21px;
+  font-family: Arial;
+  color: #12F3B1;
+  font-size: 21px;
+  background: #ebebeb;
+  padding: 14px 25px 14px 25px;
+  text-decoration: none;
+}
+
+/* -------------------- Footer styles ------------------ */
+
+.footer{
+  background: url(..//img/footer.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  padding-top: 145px;
+  padding-bottom: 120px;
+  background-attachment: fixed;
+}
+
+.social-icon a{
+  margin: 0 50px 50px;
+ }
+
+
+
+.social-icon a i{
+  font-size: 30px;
+  color: #12F3B1;
+  width: 80px;
+  height: 80px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #323650;
+  line-height: 2;
+  border: 10px solid #648698;
+  text-align: center;
+  transition: all 0.7s ease-in;
+}
+
+.social-icon a:hover i{
+  border: 10px solid #323650;
+  transform: rotate(360deg);
+}
+
+.footer p{
+  font-size: 30px;
+  color: #100215;
+}
